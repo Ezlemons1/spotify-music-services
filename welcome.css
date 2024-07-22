@@ -1,0 +1,240 @@
+html {
+    height:100%;
+    width:100%;
+    background-repeat:no-repeat;
+    background:linear-gradient(315deg, rgb(23, 23, 23), rgb(40, 38, 38));
+}
+
+@keyframes intro {
+    from {top:80px; opacity:0.3;}
+    to {top:50px; opacity:1;}
+}
+
+@keyframes name {
+    from {bottom:120px; opacity:0.1;}
+    to {bottom:90px; opacity:0.7;}
+}
+
+@keyframes desc {
+    from {left:550px; opacity:0.3;}
+    to {left:565px; opacity:1;}
+}
+
+@keyframes person1 {
+    from {right:50px;}
+    to {right:100px;}
+}
+
+@keyframes person2 {
+    from {right:80px;}
+    to {right:150px;}
+}
+
+@keyframes person3 {
+    from {right:50px;}
+    to {right:100px;}
+}
+
+@keyframes button1 {
+    from {top:645px;}
+    to {top:345px;}
+}
+
+@keyframes button2 {
+    from {top:745px;}
+    to {top:445px;}
+}
+
+@keyframes button3 {
+    from {top:845px;}
+    to {top:545px;}
+}
+
+div {
+    margin:auto;
+    position:fixed;
+    color:rgb(223, 232, 239);
+    font-family:"Gill Sans", sans-serif;
+}
+
+div.a {
+    height:500px;
+    width:310px;
+    top:50px;
+    left:150px;
+    padding:15px 25px;
+    font-size:100px;
+    text-align:right;
+    animation-name:intro;
+    animation-duration:2s;
+    animation-timing-function:fade-in;
+}
+
+div.b1 {
+    height:800px;
+    width:5px;
+    top:80px;
+    left:530px;
+    background-color: rgb(184, 185, 186);
+}
+
+div.b2 {
+    height:5px;
+    width:355px;
+    top:310px;
+    left:530px;
+    background-color: rgb(184, 185, 186);
+}
+
+div.c {
+    height:10px;
+    width:150px;
+    bottom:90px;
+    left:334px;
+    opacity:0.7;
+    font-size:15px;
+    text-align:right;
+    animation-name:name;
+    animation-duration:2s;
+    animation-timing-function:fade-in;
+}
+
+div.d {
+    height:200px;
+    width:310px;
+    top:80px;
+    left:565px;
+    font-size:30px;
+    text-align:left;
+    animation-name:desc;
+    animation-duration:2s;
+    animation-timing-function:fade-in;
+}
+
+img {
+    margin:auto;
+    object-fit:cover;
+    height:200px;
+    width:600px;
+    position:fixed;
+    border-radius:80px;
+    animation-duration:2s;
+    animation-timing-function:fade-in;
+}
+
+img.person1 {
+    top:100px;
+    right:100px;
+    object-position:0% 30%;
+    mask-image:linear-gradient(to left, white, transparent 170%);
+    animation-name:person1;
+}
+
+img.person2 {
+    top:350px;
+    right:150px;
+    object-position:0% 33%;
+    mask-image:linear-gradient(to right, white, transparent 170%);
+    animation-name:person2;
+}
+
+img.person3 {
+    top:600px;
+    right:100px;
+    object-position:0% 35%;
+    mask-image:linear-gradient(to left, white, transparent 170%);
+    animation-name:person3;
+}
+
+button.musicplayer {
+    height:80px;
+    width:290px;
+    position:fixed;
+    left:567px;
+    top:345px;
+    border-radius:16px;
+    background-color:rgb(62, 64, 66);
+    border:none;
+    color:rgb(231, 241, 249);
+    text-align:center;
+    font-family:'Gill Sans', sans-serif;
+    font-size:15px;
+    cursor:pointer;
+    transition:all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    touch-action:manipulation;
+    animation-name:button1;
+    animation-duration:1.6s;
+    animation-timing-function:fade-in;
+}
+
+button.musicplayer:hover {
+    box-shadow:rgb(0, 0, 0, 0.25) 0 8px 15px;
+    transform:translateY(-2px);
+}
+  
+button.musicplayer:active {
+    box-shadow:none;
+    transform:translateY(0);
+}
+
+button.trackrecord {
+    height:80px;
+    width:290px;
+    position:fixed;
+    left:567px;
+    top:445px;
+    border-radius:16px;
+    background-color:rgb(62, 64, 66);
+    border:none;
+    color:rgb(231, 241, 249);
+    text-align:center;
+    font-family:'Gill Sans', sans-serif;
+    font-size:15px;
+    cursor:pointer;
+    transition:all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    touch-action:manipulation;
+    animation-name:button2;
+    animation-duration:1.8s;
+    animation-timing-function:fade-in;
+}
+
+button.trackrecord:hover {
+    box-shadow:rgb(0, 0, 0, 0.25) 0 8px 15px;
+    transform:translateY(-2px);
+}
+  
+button.trackrecord:active {
+    box-shadow:none;
+    transform:translateY(0);
+}
+
+button.aboutme {
+    height:80px;
+    width:290px;
+    position:fixed;
+    left:567px;
+    top:545px;
+    border-radius:16px;
+    background-color:rgb(62, 64, 66);
+    border:none;
+    color:rgb(231, 241, 249);
+    text-align:center;
+    font-family:'Gill Sans', sans-serif;
+    font-size:15px;
+    cursor:pointer;
+    transition:all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    touch-action:manipulation;
+    animation-name:button3;
+    animation-duration:2s;
+    animation-timing-function:fade-in;
+}
+
+button.aboutme:hover {
+    box-shadow:rgb(0, 0, 0, 0.25) 0 8px 15px;
+    transform:translateY(-2px);
+}
+  
+button.aboutme:active {
+    box-shadow:none;
+    transform:translateY(0);
+}
