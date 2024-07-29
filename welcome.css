@@ -6,48 +6,48 @@ html {
 }
 
 @keyframes intro {
-    from {top:80px; opacity:0.3;}
-    to {top:50px; opacity:1;}
+    from {top:0.9em; opacity:0.3;}
+    to {top:0.6em; opacity:1;}
 }
 
 @keyframes name {
-    from {bottom:120px; opacity:0.1;}
-    to {bottom:90px; opacity:0.7;}
+    from {top:51.5em; opacity:0.1;}
+    to {top:52.5em; opacity:0.7;}
 }
 
 @keyframes desc {
-    from {left:550px; opacity:0.3;}
-    to {left:565px; opacity:1;}
+    from {left:16.2em; opacity:0.3;}
+    to {left:17.2em; opacity:1;}
 }
 
 @keyframes person1 {
-    from {right:50px;}
-    to {right:100px;}
+    from {left:65%;}
+    to {left:60%;}
 }
 
 @keyframes person2 {
-    from {right:80px;}
-    to {right:150px;}
+    from {left:65%;}
+    to {left:58%;}
 }
 
 @keyframes person3 {
-    from {right:50px;}
-    to {right:100px;}
+    from {left:65%;}
+    to {left:60%;}
 }
 
 @keyframes button1 {
-    from {top:645px;}
-    to {top:345px;}
+    from {top:37.4em;}
+    to {top:21.5em;}
 }
 
 @keyframes button2 {
-    from {top:745px;}
-    to {top:445px;}
+    from {top:43.7em;}
+    to {top:27.8em;}
 }
 
 @keyframes button3 {
-    from {top:845px;}
-    to {top:545px;}
+    from {top:50em;}
+    to {top:34.1em;}
 }
 
 div {
@@ -58,11 +58,11 @@ div {
 }
 
 div.a {
-    height:500px;
-    width:310px;
-    top:50px;
-    left:150px;
-    padding:15px 25px;
+    height:5.5em;
+    width:3.2em;
+    top:0.6em;
+    left:1em;
+    padding:0.1em 0.2em;
     font-size:100px;
     text-align:right;
     animation-name:intro;
@@ -71,28 +71,28 @@ div.a {
 }
 
 div.b1 {
-    height:800px;
-    width:5px;
-    top:80px;
-    left:530px;
+    height:50em;
+    width:0.4em;
+    top:5em;
+    left:30em;
     background-color: rgb(184, 185, 186);
 }
 
 div.b2 {
-    height:5px;
-    width:355px;
-    top:310px;
-    left:530px;
+    height:0.4em;
+    width:22.8em;
+    top:19.3em;
+    left:30em;
     background-color: rgb(184, 185, 186);
 }
 
 div.c {
-    height:10px;
-    width:150px;
-    bottom:90px;
-    left:334px;
+    height:1em;
+    width:10em;
+    top:52.5em;
+    left:17em;
     opacity:0.7;
-    font-size:15px;
+    font-size:1em;
     text-align:right;
     animation-name:name;
     animation-duration:2s;
@@ -100,11 +100,11 @@ div.c {
 }
 
 div.d {
-    height:200px;
-    width:310px;
-    top:80px;
-    left:565px;
-    font-size:30px;
+    height:7em;
+    width:10.3em;
+    top:2.6em;
+    left:17.2em;
+    font-size:1.9em;
     text-align:left;
     animation-name:desc;
     animation-duration:2s;
@@ -114,8 +114,8 @@ div.d {
 img {
     margin:auto;
     object-fit:cover;
-    height:200px;
-    width:600px;
+    height:12.5em;
+    width:37.5em;
     position:fixed;
     border-radius:80px;
     animation-duration:2s;
@@ -124,7 +124,7 @@ img {
 
 img.person1 {
     top:100px;
-    right:100px;
+    left:60%;
     object-position:0% 30%;
     mask-image:linear-gradient(to left, white, transparent 170%);
     animation-name:person1;
@@ -132,7 +132,7 @@ img.person1 {
 
 img.person2 {
     top:350px;
-    right:150px;
+    left:58%;
     object-position:0% 33%;
     mask-image:linear-gradient(to right, white, transparent 170%);
     animation-name:person2;
@@ -140,28 +140,31 @@ img.person2 {
 
 img.person3 {
     top:600px;
-    right:100px;
+    left:60%;
     object-position:0% 35%;
     mask-image:linear-gradient(to left, white, transparent 170%);
     animation-name:person3;
 }
 
-button.musicplayer {
-    height:80px;
-    width:290px;
+button {
+    height:5em;
+    width:18em;
     position:fixed;
-    left:567px;
-    top:345px;
     border-radius:16px;
     background-color:rgb(62, 64, 66);
     border:none;
     color:rgb(231, 241, 249);
     text-align:center;
     font-family:'Gill Sans', sans-serif;
-    font-size:15px;
+    font-size:1em;
     cursor:pointer;
     transition:all 300ms cubic-bezier(.23, 1, 0.32, 1);
     touch-action:manipulation;
+}
+
+button.musicplayer {
+    left:32.8em;
+    top:21.5em;
     animation-name:button1;
     animation-duration:1.6s;
     animation-timing-function:fade-in;
@@ -178,21 +181,8 @@ button.musicplayer:active {
 }
 
 button.trackrecord {
-    height:80px;
-    width:290px;
-    position:fixed;
-    left:567px;
-    top:445px;
-    border-radius:16px;
-    background-color:rgb(62, 64, 66);
-    border:none;
-    color:rgb(231, 241, 249);
-    text-align:center;
-    font-family:'Gill Sans', sans-serif;
-    font-size:15px;
-    cursor:pointer;
-    transition:all 300ms cubic-bezier(.23, 1, 0.32, 1);
-    touch-action:manipulation;
+    left:32.8em;
+    top:27.8em;
     animation-name:button2;
     animation-duration:1.8s;
     animation-timing-function:fade-in;
@@ -209,21 +199,8 @@ button.trackrecord:active {
 }
 
 button.aboutme {
-    height:80px;
-    width:290px;
-    position:fixed;
-    left:567px;
-    top:545px;
-    border-radius:16px;
-    background-color:rgb(62, 64, 66);
-    border:none;
-    color:rgb(231, 241, 249);
-    text-align:center;
-    font-family:'Gill Sans', sans-serif;
-    font-size:15px;
-    cursor:pointer;
-    transition:all 300ms cubic-bezier(.23, 1, 0.32, 1);
-    touch-action:manipulation;
+    left:32.8em;
+    top:34.1em;
     animation-name:button3;
     animation-duration:2s;
     animation-timing-function:fade-in;
@@ -237,4 +214,76 @@ button.aboutme:hover {
 button.aboutme:active {
     box-shadow:none;
     transform:translateY(0);
+}
+
+@media (max-width: 1400px) {
+    body {
+        transform: scale(0.8);
+        transform-origin: top left;
+    }
+    img.person1 {
+        left: 75%;
+    }
+
+    img.person2 {
+        left: 73%;
+    }
+
+    img.person3 {
+        left: 75%;
+    }
+}
+
+@media (max-width: 1200px) {
+    body {
+        transform: scale(0.7);
+        transform-origin: top left;
+    }
+    img.person1 {
+        left: 90%;
+    }
+
+    img.person2 {
+        left: 88%;
+    }
+
+    img.person3 {
+        left: 90%;
+    }
+}
+
+@media (max-width: 1000px) {
+    body {
+        transform: scale(0.6);
+        transform-origin: top left;
+    }
+    img.person1 {
+        left: 110%;
+    }
+
+    img.person2 {
+        left: 108%;
+    }
+
+    img.person3 {
+        left: 110%;
+    }
+}
+
+@media (max-width: 800px) {
+    body {
+        transform: scale(0.5);
+        transform-origin: top left;
+    }
+    img.person1 {
+        left: 130%;
+    }
+
+    img.person2 {
+        left: 128%;
+    }
+
+    img.person3 {
+        left: 130%;
+    }
 }
